@@ -23,7 +23,22 @@
         .upper{
             text-transform: uppercase;
         }
-    
+        /* Combinator */
+        div p{
+            color: yellow;
+        }
+        /* Child Selector */
+        div > p{
+            color: blue;
+        }
+        /* adjacent sibling */
+        div + p{
+            color: blue;
+        }
+        /* General sibling */
+        div ~ p{
+            color: blue;
+        }
     </style>
     <link rel="stylesheet" href="hello.css">
 </head>
@@ -47,5 +62,16 @@
     <h1>ini adalah titlle</h1>
     <h2>ini adalah sub title</h2>
     <p>ini adalah isi artikel</p>
+
+    <!--Combinator-->
+    <div>
+        <p>ini contoh</p>
+        <article>
+            <p>dipilih</p>
+        </article>
+        <p>dipilih</p>
+    </div>
+    <p>dipilih</p>
+    <p>tidak dipilih</p>
 </body>
 </html>
